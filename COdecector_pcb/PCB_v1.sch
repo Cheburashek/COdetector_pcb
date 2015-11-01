@@ -5739,8 +5739,6 @@ Includes Amendment 1, October 1996&lt;p&gt;
 <part name="C7" library="eagle-ltspice" deviceset="C" device="" value="100n"/>
 <part name="L2" library="rcl" deviceset="L-US" device="L2012C" value="1m"/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device="" value="VCC USB"/>
-<part name="R4" library="eagle-ltspice" deviceset="R" device="R3216" value="10k"/>
-<part name="R5" library="eagle-ltspice" deviceset="R" device="R3216" value="6k2"/>
 <part name="R6" library="eagle-ltspice" deviceset="R" device="R3216" value="6k2"/>
 <part name="R7" library="eagle-ltspice" deviceset="R" device="R3216" value="10k"/>
 <part name="LED1" library="eagle-ltspice" deviceset="LED_E" device="" value="TX"/>
@@ -5809,8 +5807,6 @@ Includes Amendment 1, October 1996&lt;p&gt;
 <instance part="C7" gate="G$1" x="205.74" y="114.3"/>
 <instance part="L2" gate="G$1" x="226.06" y="134.62" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="208.28" y="177.8"/>
-<instance part="R4" gate="G$1" x="144.78" y="114.3" rot="R270"/>
-<instance part="R5" gate="G$1" x="144.78" y="129.54" rot="R270"/>
 <instance part="R6" gate="G$1" x="134.62" y="129.54" rot="R270"/>
 <instance part="R7" gate="G$1" x="134.62" y="114.3" rot="R270"/>
 <instance part="LED1" gate="G$1" x="198.12" y="165.1"/>
@@ -6029,11 +6025,7 @@ Includes Amendment 1, October 1996&lt;p&gt;
 <junction x="236.22" y="106.68"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="109.22" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="106.68" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
-<junction x="144.78" y="106.68"/>
+<wire x1="134.62" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
 <junction x="152.4" y="106.68"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="109.22" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
@@ -6219,14 +6211,6 @@ Includes Amendment 1, October 1996&lt;p&gt;
 <wire x1="205.74" y1="132.08" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="RXD"/>
-<wire x1="157.48" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="134.62" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="TXD"/>
@@ -6250,15 +6234,12 @@ Includes Amendment 1, October 1996&lt;p&gt;
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="119.38" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PC3"/>
-<wire x1="144.78" y1="121.92" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="121.92" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<junction x="144.78" y="121.92"/>
+<wire x1="144.78" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="RXD"/>
+<wire x1="157.48" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="78.74" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
