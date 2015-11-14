@@ -12694,6 +12694,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="R20" library="eagle-ltspice" deviceset="R" device="R3216" value="10k"/>
 <part name="GND10" library="supply1" deviceset="GND" device="" value="GND D"/>
 <part name="SUPPLY17" library="supply2" deviceset="VCC" device="" value="VCC USB"/>
+<part name="GND11" library="supply1" deviceset="GND" device="" value="GND A"/>
+<part name="GND12" library="supply1" deviceset="GND" device="" value="GND D"/>
+<part name="0R" library="eagle-ltspice" deviceset="R" device="R3216" value="6k2"/>
 </parts>
 <sheets>
 <sheet>
@@ -12775,6 +12778,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="R20" gate="G$1" x="109.22" y="152.4" rot="R270"/>
 <instance part="GND10" gate="1" x="109.22" y="142.24"/>
 <instance part="SUPPLY17" gate="G$1" x="109.22" y="177.8"/>
+<instance part="GND11" gate="1" x="139.7" y="167.64"/>
+<instance part="GND12" gate="1" x="160.02" y="167.64"/>
+<instance part="0R" gate="G$1" x="149.86" y="182.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13077,6 +13083,12 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="144.78" x2="109.22" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="0R" gate="G$1" pin="2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="144.78" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="182.88" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -13463,6 +13475,14 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <junction x="109.22" y="160.02"/>
 <wire x1="109.22" y1="160.02" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="R9" class="0">
+<segment>
+<pinref part="0R" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="154.94" y1="182.88" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="182.88" x2="160.02" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
